@@ -1,0 +1,35 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    width: 100%;
+}
+
+#img{
+    width: 50%;
+    margin: 5% auto;
+}
+
+#img img{
+    width: 100%;
+}
+
+.button
+{
+    width: 50%;
+    margin: 5% auto;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button button{
+    font-size: 20px;
+    width: 30%;
+    height: 80%;
+}
