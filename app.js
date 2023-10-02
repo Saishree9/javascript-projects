@@ -1,3 +1,6 @@
+// *------project 1---------------
+
+
 function hide()
 {
     let img=document.getElementById('img');
@@ -11,6 +14,7 @@ function show()
 }
 
 // &----------------------------------------------------------------------------------------
+// *------project 2---------------
 
 
 // function changeButton(){
@@ -41,45 +45,42 @@ function changeButton(){
 }
 
 // &----------------------------------------------------------------------------------------
+// *------project 3---------------
 
 
-let scrollImages=['https://bootstrapmade.com/demo/templates/MeFamily/assets/img/about.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/vacation-2.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/home-2.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/vacation-3.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/beach-3.jpg'];
+// let scrollImages=['https://bootstrapmade.com/demo/templates/MeFamily/assets/img/about.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/vacation-2.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/home-2.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/vacation-3.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/beach-3.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/beach-2.jpg','https://bootstrapmade.com/demo/templates/MeFamily/assets/img/gallery/beach-1.jpg'];
 
-function previous(){
-    let img=document.getElementById('scrollImg');
-    if(img.src===scrollImages[0]){
-        img.src=scrollImages[4]
-    }
-    else if(img.src===scrollImages[1]){
-        img.src=scrollImages[0]
-    }
-    else if(img.src===scrollImages[2]){
-        img.src=scrollImages[1]
-    }
-    else if(img.src===scrollImages[3]){
-        img.src=scrollImages[2]
-    }
-    else if(img.src===scrollImages[4]){
-        img.src=scrollImages[3]
+// let img=document.getElementById("scrollImg")
+// let i=0;
+
+// function next(){
+
+//     img.src=scrollImages[++i]
+//     if(i===(scrollImages.length)-1){
+//         i=-1;
+//     }
+// }
+
+// let n=scrollImages.length;
+// function previous(){
+//     img.src=scrollImages[--n]
+//     if(n===0){
+//         n=scrollImages.length
+//     }
+// }
+
+// &----------------------------------------------------------------------------------------
+// *------project 4---------------
+
+let btn=document.getElementById('btn');
+let count=document.getElementById('counter')
+
+let n=0;
+
+function counter(){
+    count.innerText=++n
+    if(n==10){
+        btn.removeEventListener('click', counter)
     }
 }
-
-
-function next(){
-    let img=document.getElementById('scrollImg');
-    if(img.src===scrollImages[0]){
-        img.src=scrollImages[1]
-    }
-    else if(img.src===scrollImages[1]){
-        img.src=scrollImages[2]
-    }
-    else if(img.src===scrollImages[2]){
-        img.src=scrollImages[3]
-    }
-    else if(img.src===scrollImages[3]){
-        img.src=scrollImages[4]
-    }
-    else if(img.src===scrollImages[4]){
-        img.src=scrollImages[0]
-    }
-}
+btn.addEventListener('click', counter)

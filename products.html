@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="search" placeholder="search for the product" id="searchProduct" onkeyup="getProduct()">
+    <button onclick="getProduct()">Search</button>
+    
+    <table border cellpadding="20px">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Image</td>
+            </tr>
+        </thead>
+        <tbody id="productslist">
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total price</td>
+                <td id="totalPrice"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="./products.js"></script>
+</body>
+</html>

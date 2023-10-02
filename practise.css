@@ -1,0 +1,39 @@
+.grandparent{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(219, 156, 156);
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(130, 130, 198);
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(235, 101, 123);
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grandchild{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(116, 180, 180);
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
